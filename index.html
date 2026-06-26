@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free Chinese Learning Tools — No Login, No Install | Daligao</title>
-<meta name="description" content="5 free browser-based tools for learning Mandarin Chinese. Pinyin annotator, reading comprehension, chengyu stories, HSK flashcards, writing toolkit. Built by someone who lives in China.">
+<meta name="description" content="6 free browser-based tools for learning Mandarin Chinese. Pinyin annotator, reading comprehension, chengyu stories, HSK flashcards, writing toolkit. Built by someone who lives in China.">
 <meta property="og:title" content="Free Chinese Learning Tools — 5 Offline Browser Apps">
 <meta property="og:description" content="Paste Chinese text → instant pinyin. Learn chengyu, read historical stories in Chinese, master HSK vocabulary. All free, offline, no login.">
 <meta property="og:url" content="https://daligao.github.io/learn-chinese-free/">
@@ -75,6 +75,8 @@ nav{background:rgba(8,12,20,.9);backdrop-filter:blur(10px);
 .tool-card.gold:hover{border-color:rgba(245,166,35,.5)}
 .tool-card.purple{border-color:rgba(167,139,250,.2)}
 .tool-card.purple:hover{border-color:rgba(167,139,250,.5)}
+.tool-card.orange{border-color:rgba(255,166,87,.2)}
+.tool-card.orange:hover{border-color:rgba(255,166,87,.5)}
 .tool-icon{font-size:2.2em;margin-bottom:12px}
 .tool-name{font-size:1.05em;font-weight:700;margin-bottom:4px}
 .tool-cn{font-size:.8em;color:var(--dim);margin-bottom:10px;letter-spacing:1px}
@@ -86,6 +88,7 @@ nav{background:rgba(8,12,20,.9);backdrop-filter:blur(10px);
 .tag-green{background:rgba(82,183,136,.12);color:var(--green)}
 .tag-gold{background:rgba(245,166,35,.12);color:var(--gold)}
 .tag-purple{background:rgba(167,139,250,.12);color:#b09ee8}
+.tag-orange{background:rgba(255,166,87,.12);color:#ffa657}
 .tool-btns{display:flex;gap:8px}
 .btn-try{flex:1;padding:9px 0;border-radius:10px;border:none;cursor:pointer;
   font-size:.85em;font-weight:600;transition:.2s;text-decoration:none;text-align:center}
@@ -147,7 +150,7 @@ footer a:hover{text-decoration:underline}
 <div class="hero">
   <div class="hero-badge">Free · Offline · Open Source</div>
   <h1>Learn Chinese with<br>Free Browser Tools</h1>
-  <p>5 tools built by someone who lives in China and knows what actually helps learners go from beginner to fluent. No login, no install — open and start.</p>
+  <p>6 tools built by someone who lives in China and knows what actually helps learners go from beginner to fluent. No login, no install — open and start.</p>
   <div class="hero-stats">
     <div class="h-stat"><div class="val">5</div><div class="lab">Free Tools</div></div>
     <div class="h-stat"><div class="val">2,500+</div><div class="lab">Characters in Pinyin Dict</div></div>
@@ -251,6 +254,23 @@ footer a:hover{text-decoration:underline}
         </div>
       </div>
 
+      <!-- HSK Text Analyzer -->
+      <div class="tool-card orange">
+        <div class="tool-icon">📊</div>
+        <div class="tool-name">HSK Text Analyzer</div>
+        <div class="tool-cn">中文难度检测</div>
+        <div class="tool-tags">
+          <span class="tag tag-orange">All levels</span>
+          <span class="tag tag-orange">HSK 1–6</span>
+          <span class="tag tag-orange">Difficulty check</span>
+        </div>
+        <div class="tool-desc">Paste any Chinese text — every word is instantly color-coded by HSK level (1–6). See your comprehension % per level, hover any word for pinyin + English, export unknown words as a study list. 4 sample texts from HSK 2 story to HSK 6 academic essay. ~1,500-word dictionary, works offline.</div>
+        <div class="tool-btns">
+          <a class="btn-try" href="https://ordinarymantrying.com/tools/hsk-text-analyzer.html" target="_blank" style="background:linear-gradient(120deg,#b45309,#ffa657);color:#fff;">Analyze Text →</a>
+          <a class="btn-gh" href="https://github.com/daligao/hsk-text-analyzer" target="_blank">⭐ GitHub</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -268,17 +288,19 @@ footer a:hover{text-decoration:underline}
           <th>Chengyu</th>
           <th>Flashcards</th>
           <th>Writing</th>
+          <th>HSK Analyzer</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Read unknown Chinese text</td><td class="check">✓ Best choice</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td></tr>
-        <tr><td>Comprehension practice</td><td class="cross">–</td><td class="check">✓ 10 stories</td><td class="check">✓ 20 stories</td><td class="cross">–</td><td class="cross">–</td></tr>
-        <tr><td>Vocabulary building</td><td class="check">✓ 2,500 chars</td><td class="check">✓ 6/story</td><td class="check">✓ 5/story</td><td class="check">✓ 400+ HSK</td><td class="check">✓ patterns</td></tr>
-        <tr><td>Tone practice</td><td class="check">✓ Color-coded</td><td class="check">✓ Popup</td><td class="check">✓ Popup</td><td class="check">✓ Popup</td><td class="cross">–</td></tr>
-        <tr><td>Cultural context</td><td class="cross">–</td><td class="check">✓ History</td><td class="check">✓ Ancient tales</td><td class="cross">–</td><td class="cross">–</td></tr>
-        <tr><td>Writing practice</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="check">✓ 11 types</td></tr>
-        <tr><td>Exam prep (HSK)</td><td class="check">✓ Level tags</td><td class="check">✓ HSK4–6</td><td class="check">✓ HSK4–6</td><td class="check">✓ HSK1–3</td><td class="check">✓ Writing</td></tr>
-        <tr><td>Best for level</td><td>All levels</td><td>Intermediate+</td><td>Intermediate+</td><td>Beginner–Int.</td><td>Intermediate+</td></tr>
+        <tr><td>Read unknown Chinese text</td><td class="check">✓ Best choice</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td></tr>
+        <tr><td>Comprehension practice</td><td class="cross">–</td><td class="check">✓ 10 stories</td><td class="check">✓ 20 stories</td><td class="cross">–</td><td class="cross">–</td><td class="check">✓ % score</td></tr>
+        <tr><td>Vocabulary building</td><td class="check">✓ 2,500 chars</td><td class="check">✓ 6/story</td><td class="check">✓ 5/story</td><td class="check">✓ 400+ HSK</td><td class="check">✓ patterns</td><td class="check">✓ export list</td></tr>
+        <tr><td>Tone practice</td><td class="check">✓ Color-coded</td><td class="check">✓ Popup</td><td class="check">✓ Popup</td><td class="check">✓ Popup</td><td class="cross">–</td><td class="check">✓ Popup</td></tr>
+        <tr><td>Cultural context</td><td class="cross">–</td><td class="check">✓ History</td><td class="check">✓ Ancient tales</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td></tr>
+        <tr><td>Writing practice</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="check">✓ 11 types</td><td class="cross">–</td></tr>
+        <tr><td>Difficulty check</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="cross">–</td><td class="check">✓ Best choice</td></tr>
+        <tr><td>Exam prep (HSK)</td><td class="check">✓ Level tags</td><td class="check">✓ HSK4–6</td><td class="check">✓ HSK4–6</td><td class="check">✓ HSK1–3</td><td class="check">✓ Writing</td><td class="check">✓ All levels</td></tr>
+        <tr><td>Best for level</td><td>All levels</td><td>Intermediate+</td><td>Intermediate+</td><td>Beginner–Int.</td><td>Intermediate+</td><td>All levels</td></tr>
       </tbody>
     </table>
   </div>
